@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculateur de prix - Maçonnerie</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculateur de prix - Maçonnerie</h1>
+       
+        <label for="surface">Surface (m²) :</label>
+        <input type="number" id="surface" placeholder="Ex: 50" min="1">
+       
+        <label for="type">Type de maçonnerie :</label>
+        <select id="type">
+            <option value="parpaing">Mur en parpaings</option>
+            <option value="brique">Mur en briques</option>
+            <option value="beton">Dalle en béton</option>
+        </select>
+
+        <label for="mainOeuvre">Coût de la main-d'œuvre (€/m²) :</label>
+        <input type="number" id="mainOeuvre" placeholder="Ex: 30" min="1">
+
+        <button onclick="calculerPrix()">Calculer</button>
+
+        <h2>Résultat :</h2>
+        <p id="resultat"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
